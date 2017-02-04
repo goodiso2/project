@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MitKnits</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+</script>
+</head>
+
+<body>
+
+    <div class="container">
+    <div class="navbar-header brand-icon">
+    <a class="navbar-brand" href="#">MitKnits</a>                   
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsingList">
+       <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+        </button>
+</div>
+        
+<ul id="myCollapsingList" class ="nav navbar-nav collapse navbar-collapse nav-area-main" >
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Design.html">Designs</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+
+  
+
+
+        <div class="jumbotron header-bg">
+
+
+             <h2> Welcome to Mitknits where we talk everything wool</h2>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Knitting</h2>
+                    <p> is a method by which yarn is manipulated to create a textile or fabric.
+                    Knitting creates multiple loops of yarn, called stitches, in a line or tube. Knitting has multiple active stitches on the needle at one time. Knitted fabric consists of a number of consecutive rows of interlocking loops. As each row progresses, a newly created loop is pulled through one or more loops from the prior row, placed on the gaining needle, and the loops from the prior row are then pulled off the other needle.
+
+                    Knitting may be done by hand or by using a machine.
+                    </p>
+
+                    <a href="About.html" class="btn btn-success">Find more info about us</a>
+                </div>
+                <div class="col-sm-6">
+                <form name="registrationForm" ng-submit="submitForm()" novalidate>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" name="name" class="form-control" ng-model="user.username" required>
+                        <p ng-show="registrationForm.name.$pristine" class="help-block">Your username is required</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="password" class="form-control" ng-model="user.password" required>
+                        <p ng-show="registrationForm.password.$pristine" class="help-block">Your password is required</p>
+                    </div>
+ 
+                    <button type="submit" class="btn btn-primary" ng-disabled="registrationForm.$invalid">Submit</button>
+                </form>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <h2>Our Designs for you</h2>
+                    <p>There is still some skill required for knitting. Happily, this isn’t too hard to learn so you can do it yourself. The only things you’ll need are knitting needles and yarn and you are ready to begin. There are several basic knitting stitches that you will need to learn. Once you have these down, all you have to do is connect them and keep at it.</p>
+                    <a href="#" class="btn btn-success">Design</a>
+                   
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h2>Events</h2>
+                    <p>Check out our events that we have planned fro 2017 </p>
+                </div>
+            </div>
+
+            
+             <div class = "row">
+   
+                   <div class = "col-sm-6 col-md-4">
+                      <div class = "thumbnail">
+                         <img src = "images/design1.jpeg" alt = "Generic placeholder thumbnail">
+                      </div>
+                      
+                      <div class = "caption">
+                         <h3>Find a Knitting group</h3>
+                                                  
+                         <p>
+                            <a href = "https://www.google.co.uk/search?q=find+a+knitting+group&oq=find+a+knitting+group&aqs=chrome..69i57j0.6625j0j4&sourceid=chrome&ie=UTF-8" class = "btn btn-primary" role = "button">
+                               Button
+                            </a> 
+                            
+                            
+                         </p>
+                         
+                      </div>
+                   </div>
+                   
+                
+                   
+                   <div class = "col-sm-6 col-md-4">
+                      <div class = "thumbnail">
+                         <img src = "images/design3.jpg" alt = "Generic placeholder thumbnail">
+                      </div>
+                      
+                      <div class = "caption">
+                         <h3>Learn How to knit Via Youtube</h3>
+                         
+                         
+                         <p>
+                            <a href = "https://www.youtube.com/watch?v=Tff3ng-djtk" class = "btn btn-primary" role = "button">
+                               Button
+                            </a> 
+                            
+                            
+                         </p>
+                         
+                      </div>
+                   </div>
+                   
+                   <div class = "col-sm-6 col-md-4">
+                      <div class = "thumbnail">
+                         <img src = "images/needles.jpg" alt = "Generic placeholder thumbnail">
+                      </div>
+                      
+                      <div class = "caption">
+                         <h3>Best equipment for you</h3>
+                         
+                         
+                         <p>
+                            <a href = "https://www.amazon.co.uk/Knitting-Needles/b?ie=UTF8&node=3063676031" class = "btn btn-primary" role = "button">
+                               Button
+                            </a> 
+                            
+                            
+                         </p>
+                         
+                      </div>
+                   </div>
+                   
+                </div>
+                <footer class="col-12">
+                        <h2>Footer</h2>
+                        <p>Copyright</p>
+                </footer>
+        </div>
+    
+
+
+
+<script src='http://code.jquery.com/jquery.min.js'></script>
+<script src='bootstrap/js/bootstarp.min.js'></script>
+</body>
+
+</html>
