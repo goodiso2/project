@@ -1,13 +1,23 @@
-angular.module('TodoApp', ['ngRoute', 'RouteControllers', 'UserService']);
-
-angular.module('TodoApp').config(function($locationProvider, $routeProvider) {
-	$locationProvider.html5Mode(true);
+angular.module('mitknits', ['ngRoute'])
+.config(function($routeProvider) {
 	$routeProvider.when('/', {
-		templateUrl: 'templates/home.html',
+		templateUrl: 'views/home.html',
 		controller: 'HomeController'
 	})
-	.when('/accounts/register', {
-		templateUrl: 'templates/register.html',
-		controller: 'RegisterController'
-	});
+	.when('/news', {
+		templateUrl: 'views/news.html',
+		controller: 'NewsController'
+	})
+	.when('/designs', {
+		templateUrl: 'views/design.html',
+		controller: 'DesignController'
+	})
+	.when('/contactus', {
+		templateUrl: 'views/contactus.html',
+		controller: 'ContactUsController'
+	})
+	.when('/aboutus', {
+		templateUrl: 'views/about.html',
+		controller: 'AboutUsController'
+	})
 });

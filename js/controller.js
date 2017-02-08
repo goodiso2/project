@@ -1,13 +1,11 @@
-angular.module('RouteControllers', [])
-	.controller('HomeController', function($scope) {
-		$scope.title = "Welcome To Angular Todo!"
-	})
-	.controller('RegisterController', function($scope, UserAPIService) {
+var app = angular.module('mitknits')
+	.controller('HomeController', function($scope, UserAPIService) {
 		$scope.registrationUser = {};
+        $scope.headerTitle = 'Welcome to Mitknits where we talk everything wool';
         var URL = "https://morning-castle-91468.herokuapp.com/";
 
 
-		$scope.submitForm = function() {
+        $scope.submitForm = function() {
             if ($scope.registrationForm.$valid) {
                 $scope.registrationUser.username = $scope.user.username;
                 $scope.registrationUser.password = $scope.user.password;
@@ -20,4 +18,16 @@ angular.module('RouteControllers', [])
                 });
             }
         };
+	})
+	app.controller('AboutUsController', function($scope) {
+        $scope.headerTitle = 'About Us';
+    })
+    app.controller('DesignController', function($scope) {
+       $scope.headerTitle = 'MitKnits Designs';
+    })
+    app.controller('NewsController', function($scope) {
+        $scope.headerTitle = 'Mitknits News';
+    })
+    app.controller('ContactUsController', function($scope) {
+        $scope.headerTitle = 'Would you like to talk contact us on below address';
     });

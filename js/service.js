@@ -1,4 +1,4 @@
-angular.module('UserService', [])
+angular.module('mitknits')
 	.factory('UserAPIService', function($http) {
 		UserAPIService = {
 			registerUser: function(url, data) {

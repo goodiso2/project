@@ -23,9 +23,10 @@
 
 body{
 
-    background: linear-gradient(rgba(169, 68, 66, 0.47), rgba(230, 203, 103, 0.54)), url(images/banner1.jpg);
+    background: linear-gradient(rgba(169, 68, 66, 0.47), rgba(230, 203, 103, 0.54)), url(images/background.jpeg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
 
 }
 
@@ -34,4 +35,15 @@ footer {
     padding: 16px;
     color: #fff;
     width: 105%;
+
+}
+
+
+.thumbnail{
+    background-color: transparent;
+   
+}
+
+.h2{
+    size: 10px;
 }

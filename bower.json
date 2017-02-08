@@ -1,0 +1,18 @@
+{
+  "name": "stream1project",
+  "homepage": "https://github.com/goodiso2/project",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "Richard"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
