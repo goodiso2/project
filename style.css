@@ -1,3 +1,37 @@
+@font-face {
+  font-family: 'arial black';
+  src: url('myfont.woff2') format('woff2'),/* Super Modern Browsers */
+  url('myfont.woff') format('woff'),/* Pretty Modern Browsers */
+  url('myfont.ttf') format('truetype');/* Safari, Android, iOS */
+}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+// css specific properties col-lg-*
+}
+ 
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+// css specific properties col-md-*
+}
+ 
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+// css specific properties col-sm-*
+}
+ 
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+// css specific properties col-xs-*
+}
+ 
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+// css specific properties col-xs-* or none for default
+}
 
 .header-bg  {
    background: linear-gradient(rgba(255, 112, 29, 0.78), rgba(255, 248, 29, 0.5)), url(images/banner.jpeg);
@@ -20,30 +54,38 @@
 	width: 98%;
 
 }
+  /*background image style*/
 
 body{
 
-    background: linear-gradient(rgba(169, 68, 66, 0.47), rgba(230, 203, 103, 0.54)), url(images/background.jpeg.jpg);
+    background: linear-gradient(rgba(169, 68, 66, 0.47), rgba(230, 203, 103, 0.54)), url(images/background.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    font-family: 'MyWebFont', Fallback, serif;
 
 }
 
 footer {
-	    background-color: rgba(51, 51, 51, 0.52);
-    padding: 16px;
+    background-color: rgba(51, 51, 51, 0.52);
+    padding: 10px;
     color: #fff;
     width: 105%;
+    height: 100px
 
 }
 
-
+/*remove white space from thumnails*/
 .thumbnail{
     background-color: transparent;
    
 }
 
-.h2{
+.title{
     size: 10px;
 }
+
+
+
+
+

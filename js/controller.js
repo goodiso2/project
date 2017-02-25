@@ -12,8 +12,11 @@ var app = angular.module('mitknits')
 
                 UserAPIService.registerUser(URL + "accounts/register/", $scope.registrationUser).then(function(results) {
                     $scope.data = results.data;
-                    alert("You have successfully registered to Angular Todo");
+
+                    debugger;
+                    alert("You have successfully logged into Mitknits");
                 }).catch(function(err) {
+                    debugger;
                     alert("Oops! Something went wrong!");
                 });
             }
@@ -29,5 +32,5 @@ var app = angular.module('mitknits')
         $scope.headerTitle = 'Mitknits News';
     })
     app.controller('ContactUsController', function($scope) {
-        $scope.headerTitle = 'Would you like to talk contact us on below address';
+        $scope.headerTitle = 'Please feel free to Contact Us';
     });
